@@ -464,7 +464,7 @@ tmp <- read_csv("ECG5000_TEST.csv", col_names = FALSE)
 ds <- rbind(ds, tmp)
 rm(tmp)
 
-# Ricalcolo base ottimale ----------------------------------------------------------------
+# Ricalcolo base ottimale ------------------------------------------------------
 l <- 10^seq(-5, 5, 0.05)
 set.seed(100)
 optbasis <- optim.basis(fdataobj = as.matrix(ds[,-1]), lambda = l, 
