@@ -460,8 +460,7 @@ round(FMI(ds$X1, cl),3) # FMI
 # Confronto con la letteratura -------------------------------------------------
 
 # unisco training e test
-tmp <- read_csv("C:/Users/pc/Desktop/Tesi/Dataset tesi/ECG5000_TEST.csv", 
-                col_names = FALSE)
+tmp <- read_csv("ECG5000_TEST.csv", col_names = FALSE)
 ds <- rbind(ds, tmp)
 rm(tmp)
 
